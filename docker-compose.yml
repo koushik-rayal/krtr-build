@@ -9,3 +9,7 @@ services:
     - RACK_ENV=${RACK_ENV:-production}
     ports:
     - 4000:4000
+      networks:
+      - net
+networks:
+  net:
